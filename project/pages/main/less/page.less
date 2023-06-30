@@ -1,0 +1,83 @@
+.main
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.heading
+{
+    margin: 0;
+}
+.form
+{
+    width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.form-item
+{
+    width: 100%;
+    min-height: 64px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-holder
+{
+    width: 140px;
+    height: 42px;
+    overflow: hidden;
+}
+input[type="file"]::file-selector-button
+{
+    min-height: 42px;
+    width: 140px;
+}
+.file-info
+{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+.output
+{
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    background-color: transparent;
+    color: #fff;
+
+    border-radius: 0;
+    border: solid 2px #010101;
+    outline: none;
+
+    font-family: @Body___headingFont;
+    font-weight: 400;
+    font-size: 18px;
+}
+.output:focus
+{
+    outline: 1px solid #cfa417;
+}
+.footer
+{
+    width: 100%;
+    height: 64px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #010101;
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

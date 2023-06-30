@@ -1,0 +1,14 @@
+{
+  "name": "axial-js-electron-minifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "David Harrburger aka Daven Andreas",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "24.6.1"
+  }
+}

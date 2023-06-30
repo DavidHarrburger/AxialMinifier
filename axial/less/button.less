@@ -1,0 +1,179 @@
+/* AxialButtonBase */
+.axial_button_base
+{
+    cursor: pointer;
+}
+
+/* AxialButton */
+.axial_button
+{
+    overflow: hidden;
+
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 42px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    background-color: @AxialButton___backgroundColor;
+    border-radius: @AxialButton___borderRadius;
+    box-shadow: @AxialButton___boxShadow;
+}
+.axial_button-label
+{
+    color: @AxialButton___color;
+    font-weight: @AxialButton___fontWeight;
+    font-family: @AxialButton___fontFamily;
+}
+
+/* AxialButtonIcon */
+.axial_button_icon
+{
+    overflow: hidden;
+
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 42px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    background-color: @AxialButtonIcon___backgroundColor;
+    border-radius: @AxialButtonIcon___borderRadius;
+    box-shadow: @AxialButtonIcon___boxShadow;
+
+    svg { fill: @AxialButtonIcon___svgFill; }
+}
+.axial_button_icon-label
+{
+    color: @AxialButtonIcon___color;
+    font-weight: @AxialButtonIcon___fontWeight;
+    font-family: @AxialButtonIcon___fontFamily;
+}
+.axial_button_icon-icon
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+/* AxialToggleCheck */
+.axial_toggle_check
+{
+    width: -moz-fit-content;
+    width: fit-content;
+    /*min-width: 42px;*/
+    height: 42px;
+    min-height: 42px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.axial_toggle_check-border
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background-color: #111;
+    margin-right: 12px;
+    border: solid 2px #fff;
+}
+.axial_toggle_check-sign
+{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #fff;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+.axial_toggle_check-label
+{
+    color: @AxialToggleCheck___color;
+}
+
+/* AxialToggleRadio */
+.axial_toggle_radio
+{
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 42px;
+    min-height: 42px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.axial_toggle_radio-border
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #111;
+    margin-right: 12px;
+    border: solid 2px #fff;
+}
+.axial_toggle_radio-circle
+{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+.axial_toggle_radio-label
+{
+    color: @AxialToggleRadio___color;
+}
+
+/* AxialToggleSwitch */
+.axial_toggle_switch
+{
+    width: 46px;
+    min-height: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    padding: 4px;
+    background-color: #111;
+}
+.axial_toggle_switch-circle
+{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    left: 0px;
+    transition-property: left;
+    transition-duration: 200ms;
+}
