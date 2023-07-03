@@ -84,8 +84,30 @@ class AxialMinifierApp extends GlobalPage
 
     #processButtonClickHandler( event )
     {
-        console.log("process button click");
-        window.axialElectron.minify( {test: "toto"} );
+        const file = this.#fileInput.files[0];
+        if( file === undefined || file === null )
+        {
+            throw new Error("[AXIAL_MINIFIER][ERROR] file not found" );
+        }
+        console.log(file);
+
+        const mode = this.#toggleGroupMode.selectedIndex == 0 ? "production" : "development";
+
+        const inputName = file.name;
+        const inputPath = file.path; // electron property
+        const inputBaseName = inputName.split(".js")[0];
+        const inputBasePath = inputPath.split(inputName)[0];
+        const outputName = inputBaseName + ".min.js";
+        
+        const minifyParams = 
+        {
+            mode: mode,
+            jsInput : inputPath,
+            jsOutputPath: inputBasePath,
+            jsOutput: outputName
+        };
+
+        window.axialElectron.minify( minifyParams );
     }
 }
 export { AxialMinifierApp }

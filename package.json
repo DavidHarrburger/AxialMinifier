@@ -9,6 +9,10 @@
   "author": "David Harrburger aka Daven Andreas",
   "license": "MIT",
   "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
     "electron": "24.6.1"
+  },
+  "dependencies": {
+    "webpack": "5.88.1"
   }
 }
