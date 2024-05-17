@@ -8,7 +8,8 @@
     "files_to_copy":[],
     "directories_to_copy": 
     [
-        {"source": "assets/fonts", "dest": "assets/fonts"}
+        {"source": "assets/fonts", "dest": "assets/fonts"},
+        {"source": "assets/icons", "dest": "assets/icons"}
     ],
     "js_output_filename": "application.js",
     "pages":

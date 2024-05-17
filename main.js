@@ -14,6 +14,7 @@ function initWindow()
         minimizable: true,
         maximizable: false,
         title: "Axial Minifier",
+        icon: path.join(__dirname, "assets/icons/favicon.ico"),
         webPreferences:
         {
             preload: path.join(__dirname, "main-preload.js")
